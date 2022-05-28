@@ -1,0 +1,12 @@
+/* variables */
+
+
+
+/* codigo */ 
+
+
+
+/* funciones */
+
+
+

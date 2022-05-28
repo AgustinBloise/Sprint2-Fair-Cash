@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fair Cash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-sm head">
+          <div class="container-fluid">
+                <div class="titles">
+                    <h1>
+                        Fair Cash
+                    </h1>
+                    <h5>
+                        La primer calculadora de gastos para esas juntadas de amigos
+                    </h5>
+                </div>
+          </div>
+        </nav>
+    </div>
+
+    <div class="subtitle">
+        <h6>
+            Ingresá cuanto gastó cada persona
+        </h6>
+    </div>
+    
+    <div class="mainForm">
+        <form>
+            <div class="mb-3">
+            <label for="name" class="form-label formTitles">Nombre:</label>
+            <input type="text" class="form-control centrado" id="name">
+            </div>
+            <div class="mb-3">
+            <label for="gasto" class="form-label formTitles">Gasto:</label>
+            <input type="number" class="form-control centrado" id="gasto">
+            </div>
+            <div class="btn-cent">
+            <button type="submit" class="btn btn-primary">Agregar</button>
+            </div>
+        </form>
+
+        <div class="espaciado amigos">
+            <div class="formTitles">Amigos:</div>
+            <div class="centrado borders">Juan $600</div>
+            <div class="centrado borders">Juan $600</div>
+            <div class="centrado borders">Juan $600</div>
+        </div>
+
+        <div class="espaciado total">
+            <div class="formTitles">Total:</div>
+            <div class="centrado borders">$4600</div>
+        </div>
+    
+        <div class="espaciado divisor">
+            <div class="formTitles">Cada uno debe poner:</div>
+            <div class="centrado borders">$1300</div>
+        </div>
+
+        <div class="espaciado restoC/U">
+            <div class="formTitles">Después de descontar gastos deben poner:</div>
+            <div class="centrado borders">Juan $230</div>
+            <div class="centrado borders">Juan $230</div>
+            <div class="centrado borders">Juan $230</div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

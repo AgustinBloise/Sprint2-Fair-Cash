@@ -1,0 +1,163 @@
+body{
+    background-color: rgb(235, 235, 235);
+    font-family: 'Lobster Two', cursive;
+}
+
+.head{
+    background-color: #0d2e88;
+    color: white;
+}
+
+.titles{
+    margin: 1% auto;
+    text-align: center;
+}
+
+h1{
+    font-size: 500%;
+    font-weight: 700;
+    font-style: italic;
+}
+
+h5{
+    font-size: 150%;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.subtitle{
+    margin: 1% auto;
+    text-align: center;
+}
+
+h6{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 130%;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.mainForm{
+    margin: auto 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100%;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.formTitles{
+    font-family: 'Lobster Two', cursive;
+    font-style: italic;
+    font-size: 130%;
+    font-weight: 700;
+}
+
+.btn-primary{
+    background-color: #0d2e88;
+}
+
+.btn-cent{
+    text-align: center;
+}
+
+.centrado{
+    text-align: center;
+    font-size: 150%;
+}
+
+.borders{
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid rgb(199, 199, 199);
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 7px 0 7px 12px;
+}
+
+.espaciado{
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+
+
+/* media queries */
+
+@media only screen and (min-width: 100px) and (max-width: 900px){
+    
+    .mainForm{
+        margin: auto 10%;
+    }
+    .centrado{
+        font-size: 125%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 700px){
+
+    .subtitle{
+        margin: 2% auto;
+    }
+
+    .centrado{
+        font-size: 110%;
+    }
+
+    h1{
+        font-size: 450%;
+    }
+    
+    h5{
+        font-size: 130%;
+    }
+
+    h6{
+        font-size: 120%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 450px){
+
+    .mainForm{
+        margin: auto 3%;
+    }
+
+    .subtitle{
+        margin: 3% auto;
+    }
+
+    .centrado{
+        font-size: 100%;
+    }
+
+    h1{
+        font-size: 350%;
+    }
+    
+    h5{
+        font-size: 100%;
+    }
+
+    h6{
+        font-size: 110%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 280px){
+
+    h1{
+        font-size: 200%;
+    }
+
+    h5{
+        font-size: 80%;
+    }
+
+    h6{
+        font-size: 90%;
+    }
+
+    .formTitles{
+        font-size: 100%;
+    }
+}
