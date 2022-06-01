@@ -24,6 +24,8 @@ let divisionGastos
 
 let restoAmigo 
 
+let borroAnexo = []
+
 /* codigo */ 
 
 boton.addEventListener('click', agregar)
@@ -43,6 +45,8 @@ function agregar(){
         anexoTotal()
 
         anexoDivisor()
+
+        anexoResto()
 
         limpiar()
 
@@ -66,9 +70,8 @@ function anexoAmigo(){
 
     cantAmigos.push(nombre.value)
     let newDiv = document.createElement('div')
-    newDiv.classList.add('centrado')
-    newDiv.classList.add('borders')
-    newDiv.textContent = `${nombre.value} $${gasto.value}`
+    newDiv.classList.add('centrado','borders')
+    newDiv.textContent = `${nombre.value}: $ ${parseFloat(gasto.value).toFixed(2)}`
     amigos.appendChild(newDiv)
 
 }
@@ -77,37 +80,46 @@ function anexoTotal(){
 
     gastos.push(gasto.value)
     sumGastos = 0
-    for( i = 0; i < gastos.length; i++){
+    for(i = 0; i < gastos.length; i++){
         sumGastos += parseFloat(gastos[i])
     } 
-    total.classList.add('centrado')
-    total.classList.add('borders')
+    total.classList.add('centrado','borders')
     total.textContent = ''
-    total.textContent = `$ ${sumGastos}`
+    total.textContent = `$ ${parseFloat(sumGastos).toFixed(2)}`
 
 }
 
 function anexoDivisor(){
 
     divisionGastos = sumGastos / cantAmigos.length
-    divisor.classList.add('centrado')
-    divisor.classList.add('borders')
+    divisor.classList.add('centrado','borders')
     divisor.textContent = ''
-    divisor.textContent = `$ ${divisionGastos}`
+    divisor.textContent = `$ ${parseFloat(divisionGastos).toFixed(2)}`
 
 }
 
-// function anexoResto(){
+function anexoResto(){
 
-//     restoAmigo = 0
-//     restoAmigo = divisionGastos - gastos[gastos.length-1] 
-    
-//     let newDiv = document.createElement('div')
-//     newDiv.classList.add('centrado')
-//     newDiv.classList.add('borders')
-//     newDiv.textContent = ``
+    borrar()
 
-// }
+    for(i = 0; i < cantAmigos.length; i++){
+        restoAmigo = 0
+        restoAmigo = divisionGastos - gastos[i]
+        let newDiv = document.createElement('div')
+        newDiv.classList.add('centrado','borders','anexo')
+        newDiv.textContent = `${cantAmigos[i]}: $ ${parseFloat(restoAmigo).toFixed(2)}`
+        resto.appendChild(newDiv)
+    }
+}
+
+function borrar(){
+    borroAnexo = document.querySelectorAll('.anexo')
+    if(borroAnexo.length > 0){
+        for(i = 0; i < borroAnexo.length; i++){
+            borroAnexo[i].remove()
+        }
+    }
+}
 
 function limpiar(){
     nombre.value = ''
@@ -121,4 +133,3 @@ function enter(e){
         agregar()
     }
 }
-

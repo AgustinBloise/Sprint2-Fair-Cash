@@ -160,4 +160,104 @@ h6{
     .formTitles{
         font-size: 100%;
     }
+
+    .centrado{
+        font-size: 80%;
+    }
+
+    .btn-primary{
+        font-size: 70%;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-height: 1100px){
+
+    h1{
+        font-size: 400%;
+    }
+
+    h5{
+        font-size: 125%;
+    }
+
+    h6{
+        font-size: 115%;
+    }
+
+    .titles{
+        margin: 0 auto;
+    }
+
+    .formTitles{
+        font-size: 120%;
+    }
+
+    .centrado{
+        font-size: 120%;
+    }
+
+}
+
+@media only screen and (min-width: 100px) and (max-height: 900px){
+
+    h1{
+        font-size: 300%;
+    }
+
+    h5{
+        font-size: 100%;
+    }
+
+    h6{
+        font-size: 100%;
+    }
+
+    .titles{
+        margin: 0 auto;
+    }
+
+    .formTitles{
+        font-size: 110%;
+    }
+
+    .centrado{
+        font-size: 100%;
+    }
+
+    .btn-primary{
+        font-size: 90%;
+    }
+
+}
+
+@media only screen and (min-width: 100px) and (max-height: 750px){
+
+    h1{
+        font-size: 200%;
+    }
+
+    h5{
+        font-size: 90%;
+    }
+
+    h6{
+        font-size: 90%;
+    }
+
+    .titles{
+        margin: 0 auto;
+    }
+
+    .formTitles{
+        font-size: 100%;
+    }
+
+    .centrado{
+        font-size: 90%;
+    }
+
+    .btn-primary{
+        font-size: 80%;
+    }
+
 }
