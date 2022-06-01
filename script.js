@@ -57,7 +57,7 @@ function agregar(){
     }
 
     else if(nombre.value && !gasto.value){
-        alert('Ingresá la cantidad que gastó')
+        alert('Ingresá la cantidad que gastó, recordá usar solo números')
     }
 
     else{
