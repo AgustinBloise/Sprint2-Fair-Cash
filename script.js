@@ -31,7 +31,7 @@ let formatter = new Intl.NumberFormat('en-US', {
     currency: 'USD',
   })
 
-/* codigo */ 
+/* código */ 
 
 boton.addEventListener('click', agregar)
 
