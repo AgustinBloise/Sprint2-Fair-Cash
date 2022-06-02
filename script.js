@@ -26,6 +26,11 @@ let restoAmigo
 
 let borroAnexo = []
 
+let formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+  })
+
 /* codigo */ 
 
 boton.addEventListener('click', agregar)
@@ -71,7 +76,7 @@ function anexoAmigo(){
     cantAmigos.push(nombre.value)
     let newDiv = document.createElement('div')
     newDiv.classList.add('centrado','borders')
-    newDiv.textContent = `${nombre.value}: $ ${parseFloat(gasto.value).toFixed(2)}`
+    newDiv.textContent = `${nombre.value}: ${formatter.format(gasto.value)}`
     amigos.appendChild(newDiv)
 
 }
@@ -85,7 +90,7 @@ function anexoTotal(){
     } 
     total.classList.add('centrado','borders')
     total.textContent = ''
-    total.textContent = `$ ${parseFloat(sumGastos).toFixed(2)}`
+    total.textContent = formatter.format(sumGastos)
 
 }
 
@@ -94,7 +99,7 @@ function anexoDivisor(){
     divisionGastos = sumGastos / cantAmigos.length
     divisor.classList.add('centrado','borders')
     divisor.textContent = ''
-    divisor.textContent = `$ ${parseFloat(divisionGastos).toFixed(2)}`
+    divisor.textContent = formatter.format(divisionGastos)
 
 }
 
@@ -107,7 +112,7 @@ function anexoResto(){
         restoAmigo = divisionGastos - gastos[i]
         let newDiv = document.createElement('div')
         newDiv.classList.add('centrado','borders','anexo')
-        newDiv.textContent = `${cantAmigos[i]}: $ ${parseFloat(restoAmigo).toFixed(2)}`
+        newDiv.textContent = `${cantAmigos[i]}: ${formatter.format(restoAmigo)}`
         resto.appendChild(newDiv)
     }
 }
